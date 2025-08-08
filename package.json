@@ -2,6 +2,7 @@
   "name": "react-async-csv-downloader",
   "version": "1.0.6",
   "description": "A small hook to enable asynchronous downloading of csv files",
+  "type": "module",
   "files": [
     "dist"
   ],
@@ -10,8 +11,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "vite build",
-    "test": "vitest run --coverage",
-    "coverage": "vitest",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepublishOnly": "npm run build"
   },
@@ -27,7 +29,7 @@
     "Asynchronous",
     "Download"
   ],
-  "author": "Benedikt Sottong <benediktsommer@aol.de>",
+  "author": "Benedikt Sottong <8019787+besotti@users.noreply.github.com>",
   "license": "MIT",
   "engines": {
     "npm": ">=10.0.0"
@@ -38,19 +40,21 @@
   "devDependencies": {
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
-    "@types/node": "22.7.4",
+    "@types/node": "^22.12.0",
     "@types/react": "18.3.11",
     "@typescript-eslint/eslint-plugin": "^8.8.0",
-    "@vitejs/plugin-react": "^4.3.2",
-    "@vitest/coverage-v8": "~2.1.2",
-    "@vitest/ui": "~2.1.2",
+    "@vitejs/plugin-react": "^5.0.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
     "eslint": "^8",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.30.0",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-react": "7.37.1",
+    "jsdom": "^26.1.0",
     "rollup-plugin-ignore": "^1.0.10",
-    "vite": "^5.4.8",
-    "vite-plugin-dts": "^4.2.3"
+    "vite": "^7.1.1",
+    "vite-plugin-dts": "^4.2.3",
+    "vitest": "^3.2.4"
   }
 }

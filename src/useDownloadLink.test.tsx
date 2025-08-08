@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { useDownloadLink } from './useDownloadLink';
+import { vi, describe, it, expect, beforeEach } from 'vitest';
 
 const TestComponent = ({ asyncResolver, onStart, onSuccess, onError }: any) => {
     const { getProps } = useDownloadLink({
