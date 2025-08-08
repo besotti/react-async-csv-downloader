@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import ignore from 'rollup-plugin-ignore';
-import * as path from 'path';
+import path from 'path';
 
 export default defineConfig({
     plugins: [
